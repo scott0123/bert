@@ -10,7 +10,7 @@ mkdir pretrained
 curl https://storage.googleapis.com/bert_models/2018_10_18/cased_L-12_H-768_A-12.zip -o temp.zip
 sudo apt-get -y install unzip
 unzip temp.zip
-mv cased_L-12_H-768_A-12 embeddings/
+mv cased_L-12_H-768_A-12 pretrained/cased_L-12_H-768_A-12
 rm temp.zip
 # create the model dir
 mkdir output
