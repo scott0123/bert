@@ -48,7 +48,7 @@ def do_training(gpu=0, prediction_mode="regression", restart=True):
     FLAGS.init_checkpoint = os.path.join(os.environ.get("BERT_BASE_DIR"), "bert_model.ckpt")
     FLAGS.do_lower_case = False
     FLAGS.max_seq_length = 128
-    FLAGS.train_batch_size = 1
+    FLAGS.train_batch_size = 128
     FLAGS.learning_rate = 2e-5
     FLAGS.num_train_epochs = 1
     FLAGS.output_dir = os.environ.get("OUTPUT_DIR")
